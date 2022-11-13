@@ -36,7 +36,38 @@ button{
     background-color: #f7f9fe;
     border: 0ch;
  }
- 
+ .circular-img{
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+ }
+ .wash-text{
+  margin: 20px ;
+  font-weight: bold;
+ }
+ .blue-section{
+  background-color: #2766bb;
+  color: white;
+  background-image: url(imgs/shape-a.png);
+ }
+ ul {
+list-style-type: none;
+ }
+
+ .dont-img{
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #e74b37;
+  height: 80px;
+  width: 80px;
+ }
+ .do-img{
+  border-radius: 50%;
+  border-style: solid;
+  border-color: green;
+  height: 80px;
+  width: 80px;
+ }
 div.card {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
