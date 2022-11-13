@@ -14,6 +14,9 @@ body{
 .item{
     color: #4f7bea;
 }
+.nav-link:active {
+  color: blue;
+}
 .button{
     background-color: #4f7bea;
     border-radius: 25px;
@@ -78,70 +81,30 @@ h1 {
 }
 
 /* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
-
-.accordion {
-  color: black;
-  background-color: white;
+@media only screen and (min-width: 992px) {
+  .large-card{
+    transform: translateY(-35px);
+    
+  }
+  .dont-img{
+    transform: translateX(180px);
+  }
+  .fa-xmark{
+    transform: translateX(180px);
+  }
 }
-accordion .container {
-  position: relative;
-  margin: 10px 10px;
-}
-
-/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
-
-.accordion .label {
-  position: relative;
-  padding: 10px 0;
-  color: #4f6189;;
+.acordionBoxes {
+  width: 90%;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+  padding: 12px 20px;
   cursor: pointer;
-  font-weight: bold;
-  
-
+  transition-duration: 0.2s;
 }
-.accordion .label::before {
-  content: '+';
-  color:  #4f6189;;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  font-size: 30px;
-  transform: translateY(-50%);
+.acordionBoxes:active {
+  border: 1px solid rgb(2, 117, 216);
 }
 
-/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
-
-.accordion .content {
-  position: relative;
-  padding: 5px;
-  background: white;
-  height: 0;
-  text-align: justify;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-/* Adds a horizontal line between the contents */
-
-.accordion hr {
-  margin-left: 0;
-  border: 1px solid grey;
-}
-/* Unhides the content part when active. Sets the height */
-
-.accordion .container.active .content {
-  height: 150px;
-}
-
-/* Changes from plus sign to negative sign once active */
-
-.accordion .container.active .label::before {
-  content: '-';
-  color: blue;
-}
-.large-card{
-  transform: translateY(-20px);
-}
 footer{
   background-color: #151c2e;
   color: white;
